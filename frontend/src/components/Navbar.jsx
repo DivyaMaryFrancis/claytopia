@@ -9,15 +9,16 @@ const Navbar = () => {
   return (
    
     
-  <div className="w-full p-4 bg-pink-100 text-gray-600">
+  <div className="w-full p-4 bg-yellow-50 border-b border-gray-300
+ text-gray-600">
          <div className='mb-4 flex justify-center'>
-          <h1 className='text-2xl font-bold text-gray-700'>ClayTopia</h1>
+          <h1 className='text-4xl font-bold text-gray-700 pt-4 '>ClayTopia</h1>
           </div>     
 
       <div className="flex items-center justify-between">
-        <img src={assets.logo} alt="Logo" className="h-20 w-20" />  
+        <img src={assets.logo} alt="Logo" className="h-20 w-40" />  
       
-       <ul className='hidden sm:flex gap-5 text-sm justify-center text-gray-700'>
+       <ul className='hidden sm:flex gap-5 text-lg justify-center text-gray-700'>
         <NavLink className='flex flex-col items-center gap-1 hover:text-gray-900 ' to='/'>
           <p>HOME</p>
           <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
@@ -50,7 +51,7 @@ const Navbar = () => {
          
          <div className='group relative'>
                   <img src={assets.profile} alt="Profile Icon" className='h-9 w-9 cursor-pointer' />
-                  <div className='group-hover:block hidden absolute dropdown-menu right-0  pt-4'>
+                  <div className='group-hover:block hidden absolute dropdown-menu bg-gray-200 rounde shadow-lg min-w-[160px] right-0 p-2 pt-4'>
                     <div className='flex flex-col  text-gray-500 text-lg'>
                       <p className='cursor-pointer hover:text-black'>My Profile</p>
                        <p className='cursor-pointer hover:text-black'>Orders</p>

@@ -10,8 +10,8 @@ import Contact from './pages/Contact'
 import Login from './pages/Login'
 import PlaceOrder from './pages/PlaceOrder'
 import Product from './pages/Product'
-
-
+import Footer from './components/Footer'
+import About from './pages/About'
 
 
 const App = () => {
@@ -28,12 +28,16 @@ const App = () => {
       <Route path='/contact' element={<Contact />} />
       <Route path='/login' element={<Login />} />
       <Route path='/place-order' element={<PlaceOrder />} />
+      <Route path='/about' element={<About />} />
       <Route path='/product/:id' element={<Product />} />
       {/* Add more routes as needed */}
 
     </Routes>
     </div>
+    
+    <Footer/>
     </>
+    
   )
 }
 
